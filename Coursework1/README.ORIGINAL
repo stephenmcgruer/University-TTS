@@ -1,0 +1,31 @@
+Matric:  0840449
+
+This file is a README for my submission for the TTS Coursework 1. It
+describes how to run my code.
+
+####################
+Running the crawler.
+####################
+
+Usage: crawler.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  --obey_crawl_delay    Obey the crawl delay directive.
+  --number_fetch_threads=NUMBER_FETCH_THREADS
+                        Set the number of URL fetching threads to use.
+  --number_parse_threads=NUMBER_PARSE_THREADS
+                        Set the number of parsing threads to use.
+  --log_level=LOG_LEVEL
+                        Set the level of logs to show.
+
+
+Note that you will be warned if you try and set obey_crawl_delay and also set
+number_fetch_threads to a value greater than 1. This is because Python is
+terrible at threading, so there's little point in paying that overhead if we
+have to obey a 1 second crawl delay anyway. (I would have much preferred to use
+the multiprocessing module, but that doesn't have an implementation of
+PriorityQueue...)
+
+The valid log levels are the standard Python ones - DEBUG, INFO, WARNING,
+ERROR, CRITICAL. By default it is set to INFO.
