@@ -1,0 +1,41 @@
+Matric:  0840449
+
+This file is a README for my submission for the TTS Coursework 3. It
+describes how to run my code.
+
+########################
+Contents of this folder.
+########################
+
+This folder contains the following files:
+
+    * detector.py: The main script to be run.
+    * counter.py: A backport of Python 2.7's Counter class.
+    * {finn, simhash, speeches}.py: Files used by detector.py.
+    * {exact, near, finn}.txt: The results from running detector.py.
+
+###############
+Running detector.py
+###############
+
+Usage: /usr/bin/python2.6 detector.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -e, --exact           Do full overlap matching for exact-duplicate
+                        detection.
+  -t, --training        Use the training data instead of the real data.
+  --no-zlib             Do not use zlib for the exact checksum calculation.
+  -s DISTANCE, --similarity_distance=DISTANCE
+                        The maximum distance allowed between two documents for
+                        them to be considered equal. If --no-groups is set,
+                        this is the maximum Hamming distance, else it is the
+                        maximum number of divergent groups between the two
+                        documents.
+  -b SIZE, --bit_size=SIZE
+                        The bit size used in the simhash generation.
+  --no-groups           Do not use the L groups of k bits method for near
+                        duplicate detection.
+
+**IMPORTANT NOTE**: detector.py assumes that the speech files will be found in
+a directory called 'data'.
