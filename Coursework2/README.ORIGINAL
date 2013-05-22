@@ -1,0 +1,79 @@
+Matric:  0840449
+
+This file is a README for my submission for the TTS Coursework 2. It
+describes how to run my code.
+
+########################
+Contents of this folder.
+########################
+
+This folder contains the following files:
+
+    * best.{id, py, top}: The name of, python script for, and results of my
+      algorithm.
+    * counter.py: A backport of Python 2.7's Counter class, used in doc.py.
+    * create_graph.{csv, gp, py}: The results from and gnuplot/python scripts
+      for creating the precision/recall plot shown in my report.
+    * doc.py: Used in overlap.py, tfidf.py, and best.py.
+    * output.py: Used in overlap.py, tfidf.py, and best.py.
+    * overlap.{py, top}: The python script for, and the results of my basic
+      word overlap algorithm.
+    * search{.csv, .py}: The results from and python script for searching the
+      PRF space.
+    * tfidf.{py, top}: The python script for, and the results of my tf.idf
+      algorithm.
+    * trec_eval, truth.rel: Coursework provided files.
+
+###############
+Running best.py
+###############
+
+Usage: /usr/bin/python2.6 best.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -k K                  The value of the constant used in tf.idf.
+  -d N_D, --number-documents=N_D
+                        The maximum number of documents to select from the
+                        list PRF uses.
+  -w N_W, --number-words=N_W
+                        The maximum number of words PRF takes from each
+                        document.
+  --unique-method=UNIQUE_METHOD
+                        The method to reduce the list of words PRF finds.
+
+None of the options are required, so can just be run via
+'/usr/bin/python2.6 best.py'. In this case, defaults for the options are used.
+
+#######################
+Running create_graph.py
+#######################
+
+Usage: /usr/bin/python2.6 create_graph.py
+
+Note: This script expects to be run from this directory, and to have write
+permission to this directory. It will call gnuplot automatically when done
+and write the results to report/plot.png. If the 'report' folder does not
+exist, it may crash.
+
+##################
+Running overlap.py
+##################
+
+Usage: /usr/bin/python2.6 overlap.py
+
+#################
+Running search.py
+#################
+
+Usage: /usr/bin/python2.6 search.py
+
+Note: Will take a long time! (Easily a few hours, it's a big search space).
+Temporary files are written to search/, but deleted as it goes so no huge
+space needed. The script will *not* call gnuplot automatically.
+
+################
+Running tfidf.py
+################
+
+Usage: /usr/bin/python2.6 tfidf.py
