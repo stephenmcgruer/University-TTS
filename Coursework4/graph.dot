@@ -1,0 +1,32 @@
+digraph G {
+"Joannie Williamson\n(PA)" -> "Tammie Schoppe\n(PA)" [label = "management"];
+"Joannie Williamson\n(PA)" -> "Louise Kitchen\n(President, Enron Online)" [label = "management"];
+"Joannie Williamson\n(PA)" -> "Kenneth Lay\n(CEO)" [label = "management"];
+"Jeff Dasovich\n(Government Relation Executive)" -> "Louise Kitchen\n(President, Enron Online)" [label = "california"];
+"Tana Jones" -> "Mark Taylor\n(VP & Assistant General Counsel)" [label = "eol"];
+"Jeff Dasovich\n(Government Relation Executive)" -> "Susan Mara\n(Director of Regulatory Affairs)" [label = "california"];
+"Jeff Dasovich\n(Government Relation Executive)" -> "Richard Shapiro\n(VP, Regulatory Affairs)" [label = "california"];
+"Sara Shackleton\n(Attorney)" -> "Tana Jones" [label = "agreement"];
+"Richard Shapiro\n(VP, Regulatory Affairs)" -> "Louise Kitchen\n(President, Enron Online)" [label = "affairs"];
+"Richard Shapiro\n(VP, Regulatory Affairs)" -> "Jeff Dasovich\n(Government Relation Executive)" [label = "affairs"];
+"Richard Shapiro\n(VP, Regulatory Affairs)" -> "Susan Mara\n(Director of Regulatory Affairs)" [label = "affairs"];
+"Harry Collins\n(Attorney)" -> "Tana Jones" [label = "product"];
+"Harry Collins\n(Attorney)" -> "Mark Taylor\n(VP & Assistant General Counsel)" [label = "product"];
+"Mark Taylor\n(VP & Assistant General Counsel)" -> "Louise Kitchen\n(President, Enron Online)" [label = "trading"];
+"Richard Shapiro\n(VP, Regulatory Affairs)" -> "Kenneth Lay\n(CEO)" [label = "affairs"];
+"Mark Taylor\n(VP & Assistant General Counsel)" -> "Harry Collins\n(Attorney)" [label = "trading"];
+"Mark Taylor\n(VP & Assistant General Counsel)" -> "Tana Jones" [label = "trading"];
+"Mark Taylor\n(VP & Assistant General Counsel)" -> "Sara Shackleton\n(Attorney)" [label = "trading"];
+"Tana Jones" -> "Louise Kitchen\n(President, Enron Online)" [label = "eol"];
+"Tana Jones" -> "Harry Collins\n(Attorney)" [label = "eol"];
+"Tana Jones" -> "Sara Shackleton\n(Attorney)" [label = "eol"];
+"Sara Shackleton\n(Attorney)" -> "Mark Taylor\n(VP & Assistant General Counsel)" [label = "agreement"];
+"Susan Mara\n(Director of Regulatory Affairs)" -> "Louise Kitchen\n(President, Enron Online)" [label = "restructuring"];
+"Susan Mara\n(Director of Regulatory Affairs)" -> "Jeff Dasovich\n(Government Relation Executive)" [label = "restructuring"];
+"Susan Mara\n(Director of Regulatory Affairs)" -> "Richard Shapiro\n(VP, Regulatory Affairs)" [label = "restructuring"];
+"Tammie Schoppe\n(PA)" -> "Louise Kitchen\n(President, Enron Online)" [label = "meeting"];
+"Tammie Schoppe\n(PA)" -> "Mark Taylor\n(VP & Assistant General Counsel)" [label = "meeting"];
+"Louise Kitchen\n(President, Enron Online)" -> "Tammie Schoppe\n(PA)" [label = "netco"];
+"Louise Kitchen\n(President, Enron Online)" -> "Tana Jones" [label = "netco"];
+"Louise Kitchen\n(President, Enron Online)" -> "Mark Taylor\n(VP & Assistant General Counsel)" [label = "netco"];
+}
